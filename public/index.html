@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>parser-error-test-feb13</title><style>body{font-family:sans-serif;padding:2rem} pre{background:#f5f5f5;padding:1rem;border-radius:8px}</style></head>
+<body>
+<h1>🚀 parser-error-test-feb13 Live!</h1>
+<p>API: <a href="/api">/api</a> | Flashcards ready</p>
+<pre id="data">Loading...</pre>
+<script>
+fetch("/").then(r=>r.json()).then(d=>document.getElementById("data").textContent=JSON.stringify(d,null,2));
+</script>
+</body>
+</html>
